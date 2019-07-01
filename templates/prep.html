@@ -6,13 +6,14 @@
     <meta name="author" content="Scribble Works">
     <meta name="description" content="Preptime, Quizzes">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css')}}">
     <title>Preptime Quizzes</title>
 </head>
 <body>
     <header>
         <div>
             <nav>
-                <img src="./static/img/PREP LOGO1.jpg" height="80px" width="150px">
+                <img src="./static/img/PREP LOGO1.jpg" height="75px" width="180px">
                 <a href="#login">Login</a>
                 <a href="#register">Sign up School</a>
             </nav>
@@ -28,7 +29,7 @@
         <div id="login">
             <h1 id="loginhead">Login</h1>
             <form action="./static/php/prep.php">
-                <input type="text" id="pwd" placeholder="Username"><br>
+                <input type="text" id="pwd" placeholder="Username/Index Number"><br>
                 <br>
                 <input type="password" id="pwd" placeholder="Password"><br>
                 <br>
@@ -47,18 +48,23 @@
                 <br>
                 <input type="password" placeholder="Retype Password"><br>
                 <br>
+                <input type="text" placeholder="Name Of School"><br>
+                <br>
+                <input type="text" placeholder="Center Number"><br>
+                <br>
                 <!--payment method for new users-->
                 <div class="payment">
-                    <button onclick="payment()" class="paybtn">Select payment method</button>
-                    <div id="paymentstructures" class="dropdown-content">
-                        <a href="visapayment"><img src="./static/img/visa.jpg" height="10px" width="10px"> Visa Card</a><br>
-                        <a href="mastercard"><img src="./static/img/mastercard.jpg" height="10px" width="10px"> Mastercard</a><br>
-                        <a href="momo"><img src="./static/img/momo.jpg" height="10px" width="10px">MTN Mobile Money</a><br>
-                        <a href="vf"><img src="./static/img/vfcash.png" height="10px" width="10px">Vodafone Cash</a><br>
-                        <a href="atmmoney"><img src="./static/img/atmmoney.png" height="10px" width="10px">Airteltigo Money</a><br>
-                    </div>
-                </div>
-                <button id="registerbtn">Sign Up School</button>
+                    <button class="paybtn">Select payment method</button>
+                        <div class="dropdown-content">
+                            <a href="visapayment"><img src="./static/img/visa.jpg" height="30px" width="30px">Visa Card</a><br>
+                            <a href="mastercard"><img src="./static/img/mastercard.jpg" height="30px" width="30px">Mastercard</a><br>
+                            <a href="momo"><img src="./static/img/momo.jpg" height="30px" width="30px">MTN Mobile Money</a><br>
+                            <a href="vf"><img src="./static/img/vfcash.png" height="30px" width="30px">Vodafone Cash</a><br>
+                            <a href="atmmoney"><img src="./static/img/atmmoney.png" height="10px" width="10px">Airteltigo Money</a><br>
+                        </div>
+                </div><br>
+                <br>
+                <button id="registerbtn">Register</button>
             </form>
 
         </div>
@@ -78,4 +84,7 @@
         
     </footer>
 </body>
+<script src="./static/libraries/js/prep.js"></script>
+<script src="./static/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="./static/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
 </html>
