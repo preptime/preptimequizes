@@ -28,30 +28,49 @@
         <!--Login screen-->
         <div id="login">
             <h1 id="loginhead">Login</h1>
-            <form action="./static/php/prep.php">
-                <input type="text" id="pwd" placeholder="Username/Index Number"><br>
-                <br>
-                <input type="password" id="pwd" placeholder="Password"><br>
-                <br>
-                <button id="loginbtn">Login</button>
-            </form>
+            <div>
+                <form class="form-horizontal" action="./static/php/prep.php">
+                    <div class="form-group">
+                        <input type="text" id="pwd" placeholder="Username/Index Number"><br>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="pwd" placeholder="Password"><br>
+                        <br>
+                    </div>
+                    <div class="checkbox">Keep me signed in</div>
+                    <button id="loginbtn">Login</button>
+                </form>
+            </div>
         </div>
         <!--sign up screen-->
         <div id="register">
             <h1>Register Your School</h1>
-            <form action="./static/php/prep.php">
-                <input type="text" placeholder="First Name"><br>
-                <br>
-                <input type="text" placeholder="Last Name"><br>
-                <br>
-                <input type="password" placeholder="Password"><br>
-                <br>
-                <input type="password" placeholder="Retype Password"><br>
-                <br>
-                <input type="text" placeholder="Name Of School"><br>
-                <br>
-                <input type="text" placeholder="Center Number"><br>
-                <br>
+            <form class="form-horizontal" action="./static/php/prep.php">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name"><br>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last Name"><br>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password"><br>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Retype Password"><br>
+                    <br>
+                </div>
+                <div class="form-group"></div>
+                    <input type="text" placeholder="Name Of School"><br>
+                    <br>
+                </div>
+                <div class="form-group"></div>
+                    <input type="text" placeholder="Center Number"><br>
+                    <br>
+                </div>
                 <!--payment method for new users-->
                 <div class="payment">
                     <button class="paybtn">Select payment method</button>
