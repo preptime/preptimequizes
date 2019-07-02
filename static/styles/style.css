@@ -74,7 +74,7 @@ body main div p{
 #login{
 	background-color: rgb(216, 200, 200);
 	margin-top: -40px;
-	height: 350px;
+	height: 400px;
 
 }
 
@@ -85,7 +85,7 @@ body main div form{
 #register{
 	margin-top: -41px;
 	background-color: rgb(216, 200, 200);
-	height: 600px;
+	height: 700px;
 }
 
 body footer{
@@ -128,19 +128,15 @@ body footer div span a img:hover{
 .payment{
 	position: relative;
 	display: inline;
-	/*height: 140px;
-	width: 22px;*/
+
 }
 
 .dropdown-content{
 	display: none;
 	position: absolute;
 	background-color: rgb(134, 30, 30);
-	min-width: 16px;
-	height: 140px;
+	height: 50px;
 	width: 260px;
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-	z-index: 1;
 }
 
 .dropdown-content a{
@@ -152,6 +148,13 @@ body footer div span a img:hover{
 	display: block;
 
 }
+
+.checkbox{
+	padding-bottom: 30px;
+	font-family: 'Times New Roman', Times, serif;
+	color: rgb(77, 41, 41);
+}
+
 /*For contents in the dropdown on hover*/
 .dropdown-content a:hover{
 	background-color: rgb(122, 40, 40);
